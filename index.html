@@ -90,6 +90,7 @@
     height:fit-content;
     white-space:nowrap;
   }
+  .status.wip{color:var(--amber);border-color:var(--amber);}
 
   footer{
     border-top:2px solid var(--ink);
@@ -161,6 +162,16 @@
         <div class="note">ETL pipeline extracting municipal procurement data from a PowerBI DSR endpoint. Cross-references 928 vendors against USASpending.gov federal awards.</div>
       </div>
       <a class="status" href="https://github.com/patrickryankenneth/civic-data-pipeline" target="_blank" rel="noopener">REPO →</a>
+    </div>
+
+    <div class="row">
+      <div class="no">04</div>
+      <div>
+        <div class="name">gov-spending-pipeline</div>
+        <div class="meta">patrickryankenneth/gov-spending-pipeline · MIT</div>
+        <div class="note">Resumable bulk downloader for multi-year USASpending Prime Award data across top-spend agencies — deliberately large-scale, set up as a reason to reach for real distributed tooling.</div>
+      </div>
+      <a class="status wip" href="https://github.com/patrickryankenneth/gov-spending-pipeline" target="_blank" rel="noopener">WIP →</a>
     </div>
 
   </section>
