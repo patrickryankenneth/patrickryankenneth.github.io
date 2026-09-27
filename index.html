@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patrick Ryan</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Public+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  :root{
+    --paper:#EDEAE1;
+    --ink:#1F2420;
+    --stamp:#B34632;
+    --steel:#3A4A54;
+    --line:#C9C2B2;
+    --amber:#C98A2C;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Public Sans',system-ui,sans-serif;
+    line-height:1.55;
+  }
+  a{color:var(--steel);}
+  .wrap{max-width:760px;margin:0 auto;padding:3.5rem 1.5rem 4rem;}
+
+  header{border-bottom:2px solid var(--ink);padding-bottom:1.25rem;margin-bottom:2rem;}
+  .manifest-no{font-family:'IBM Plex Mono',monospace;font-size:0.75rem;color:var(--steel);letter-spacing:0.02em;}
+  h1{
+    font-family:'Zilla Slab',serif;
+    font-weight:700;
+    font-size:2.75rem;
+    margin:0.3rem 0 0.2rem;
+  }
+  .route{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.9rem;
+    color:var(--stamp);
+  }
+
+  nav{display:flex;gap:1.5rem;margin:1.75rem 0 2.5rem;flex-wrap:wrap;}
+  nav a{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.85rem;
+    text-decoration:none;
+    color:var(--ink);
+    border-bottom:2px solid var(--line);
+    padding-bottom:0.15rem;
+  }
+  nav a:hover{border-color:var(--stamp);color:var(--stamp);}
+
+  section{margin-bottom:2.75rem;}
+  .about p{max-width:62ch;}
+
+  h2{
+    font-family:'Zilla Slab',serif;
+    font-size:1.1rem;
+    font-weight:700;
+    border-bottom:1px solid var(--line);
+    padding-bottom:0.5rem;
+    margin-bottom:1.25rem;
+  }
+
+  .row{
+    display:grid;
+    grid-template-columns:2rem 1fr auto;
+    gap:1rem;
+    align-items:start;
+    padding:1.1rem 0;
+    border-bottom:1px solid var(--line);
+  }
+  .row:last-child{border-bottom:none;}
+  .row .no{font-family:'IBM Plex Mono',monospace;color:var(--steel);font-size:0.85rem;padding-top:0.15rem;}
+  .row .name{font-weight:500;font-size:1.05rem;}
+  .row .meta{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.78rem;
+    color:var(--steel);
+    margin-top:0.3rem;
+  }
+  .row .note{font-size:0.92rem;margin-top:0.4rem;color:var(--ink);}
+  .status{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.72rem;
+    color:var(--stamp);
+    border:1px solid var(--stamp);
+    padding:0.2rem 0.5rem;
+    height:fit-content;
+    white-space:nowrap;
+  }
+
+  footer{
+    border-top:2px solid var(--ink);
+    padding-top:1.25rem;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.8rem;
+    color:var(--steel);
+  }
+  footer a{color:var(--ink);}
+
+  @media (max-width:480px){
+    h1{font-size:2.1rem;}
+    .row{grid-template-columns:1.5rem 1fr;}
+    .status{grid-column:1 / -1;justify-self:start;margin-top:0.3rem;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="manifest-no">MANIFEST — PATRICKRYANKENNETH.GITHUB.IO</div>
+    <h1>Patrick Ryan <span style="font-family:'IBM Plex Mono',monospace;font-size:1rem;color:var(--steel);font-weight:400;">he/him</span></h1>
+    <div class="route">Supply Chain Manager @ Amazon — Procurement Automation, Python, SQL &amp; Data Pipelines</div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="https://github.com/patrickryankenneth" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/patrickryankenneth/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://public.tableau.com/app/profile/patrickryankenneth" target="_blank" rel="noopener">Tableau</a>
+    <a href="https://leetcode.com/u/tUhGYEF4fl/" target="_blank" rel="noopener">LeetCode</a>
+  </nav>
+
+  <section class="about" id="about">
+    <p>Supply chain and procurement professional with nearly 10 years of experience across purchasing, vendor operations, and enterprise procurement environments. I started automating work in 2016 with Excel VBA macros that cut order upload time from about an hour to ten minutes. At the time, I did not think of it as programming. I thought of it as fixing something that was too slow.</p>
+    <p>That pattern kept repeating. MS in International Business, BS in Supply Chain. Based in Nashville.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Shipped</h2>
+
+    <div class="row">
+      <div class="no">01</div>
+      <div>
+        <div class="name">python-wheels</div>
+        <div class="meta">patrickryankenneth/python-wheels · MIT</div>
+        <div class="note">Python package building.</div>
+      </div>
+      <a class="status" href="https://github.com/patrickryankenneth/python-wheels" target="_blank" rel="noopener">REPO →</a>
+    </div>
+
+    <div class="row">
+      <div class="no">02</div>
+      <div>
+        <div class="name">alpine-fleet</div>
+        <div class="meta">patrickryankenneth/alpine-fleet · MIT</div>
+        <div class="note">Swap a running cloud VM to Alpine Linux via kexec, no image-import required.</div>
+      </div>
+      <a class="status" href="https://github.com/patrickryankenneth/alpine-fleet" target="_blank" rel="noopener">REPO →</a>
+    </div>
+
+    <div class="row">
+      <div class="no">03</div>
+      <div>
+        <div class="name">civic-data-pipeline</div>
+        <div class="meta">patrickryankenneth/civic-data-pipeline · MIT</div>
+        <div class="note">ETL pipeline extracting municipal procurement data from a PowerBI DSR endpoint. Cross-references 928 vendors against USASpending.gov federal awards.</div>
+      </div>
+      <a class="status" href="https://github.com/patrickryankenneth/civic-data-pipeline" target="_blank" rel="noopener">REPO →</a>
+    </div>
+
+  </section>
+
+  <footer>
+    <a href="https://github.com/patrickryankenneth" target="_blank" rel="noopener">github.com/patrickryankenneth</a> · <a href="mailto:patrickryankenneth@gmail.com">patrickryankenneth@gmail.com</a>
+  </footer>
+
+</div>
+</body>
+</html>
